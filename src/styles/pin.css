@@ -1,0 +1,84 @@
+/* pin.css */
+
+.pin-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 3em 2em;
+}
+
+.pin-wrapper {
+  width: 100%;
+  max-width: 400px;
+  text-align: start;
+}
+
+.pin-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pin-subtitle {
+  font-size: 14px;
+  color: #6e6e6e;
+  margin-bottom: 24px;
+}
+
+.pin-input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 34px 0;
+
+}
+
+.pin-input {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+}
+
+.pin-input:focus {
+  border-color: #00b140; /* Adjust according to your brand color */
+}
+
+.pin-error {
+  color: #ff0000;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.pin-resend {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.pin-resend-link {
+  color: #6e6e6e;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pin-submit-button {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #e3792d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 6em;
+}
+
+.pin-submit-button:disabled {
+  background-color: #ccc;
+}
