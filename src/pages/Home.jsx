@@ -14,7 +14,7 @@ const countryCodes = [{ code: "+63", country: "Philippines" }];
 
 // Validation schema
 const schema = yup.object().shape({
-  phone: yup.string().required("Phone number is required"),
+  username: yup.string().required("username is required"),
   password: yup.string().required("Password is required"),
 });
 
@@ -65,15 +65,15 @@ const Home = () => {
           </label>
           <div className="input-container">
             <input
-              name="phone"
+              name="username"
               placeholder="Enter username"
-              type="tel"
+              type="text"
               required
               className="form-input"
-              {...register("phone")}
+              {...register("username")}
             />
           </div>
-          <FormErrMsg errors={errors} inputName="phone" />
+          <FormErrMsg errors={errors} inputName="username" />
         </div>
 
         {/* Password Input */}
