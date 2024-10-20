@@ -7,14 +7,13 @@ import FormErrMsg from "../components/FormErrMsg";
 import axios from "axios";
 import BASE_URL from "../components/urls";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import logo from "../assets/logo.jpeg";
 import "../styles/home.css";
 
 const countryCodes = [{ code: "+63", country: "Philippines" }];
 
 // Validation schema
 const schema = yup.object().shape({
-  username: yup.string().required("username is required"),
+  username: yup.string().required("Username  is required"),
   password: yup.string().required("Password is required"),
 });
 
@@ -22,9 +21,7 @@ const Home = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [selectedCountryCode, setSelectedCountryCode] = useState(
-    countryCodes[0].code
-  );
+ 
   const {
     register,
     handleSubmit,
@@ -60,7 +57,7 @@ const Home = () => {
       <form onSubmit={handleSubmit(submitForm)} className="form-wrapper">
         {/* Phone Number Input */}
         <div className="form-group">
-          <label htmlFor="phone" className="form-label">
+          <label htmlFor="username" className="form-label">
             Username
           </label>
           <div className="input-container">
